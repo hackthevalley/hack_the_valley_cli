@@ -1,0 +1,17 @@
+name: htv-cli
+version: "1.0"
+author: Jun Zheng <me@jackzh.com>
+about: CLI for HTV admins.
+args:
+  - url:
+      short: u
+      long: url
+      value_name: URL
+      takes_value: true
+      help: Optionally sets the API url to use, default https://api.hackthevalley.io.
+  - key:
+      short: k
+      long: key
+      value_name: KEY
+      takes_value: true
+      help: Sets the API key to use, required if accessing private resources.
