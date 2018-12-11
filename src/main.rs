@@ -2,6 +2,9 @@
 extern crate clap;
 use clap::App;
 
+// Include all commands
+include!("api_ver.rs");
+
 fn main() {
 
     // Initialize CLI
@@ -19,7 +22,7 @@ fn main() {
 
     // Decide which subcommand to run
     if let Some(matches) = matches.subcommand_matches("api-ver") {
-        println!("api-ver...");
+        api_ver(url);
     }
 
     if let Some(matches) = matches.subcommand_matches("hackers") {
