@@ -15,3 +15,15 @@ args:
       value_name: KEY
       takes_value: true
       help: Sets the API key to use, required if accessing private resources.
+subcommands:
+  - api-ver:
+      about: Check API version
+  - hackers:
+      about: Fetch hackers
+      args:
+        - file:
+            short: f
+            long: file
+            value_name: FILE
+            takes_value: true
+            help: If set, the output will be written to a JSON file.
